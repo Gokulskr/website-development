@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book my trip</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            background-image: url(./back\ 1.webp);
+            background-size: cover;
+        }
+        #second{
+            border: 2px white solid;
+            width: 50%;
+            background: linear-gradient(to top,rgba(0,0,0,0.7)50%,rgba(0,0,0,0.5)50%);
+            border-radius: 25px;
+            padding-bottom: 20px;
+            color:red;
+            margin-left: 50px;
+        }
+        input{
+            height: 30px;
+            width: 300px;
+            border-radius: 10px;
+        }
+        h1{
+            color: white;
+            text-shadow: 5px 5px 5px red;
+            font-weight: 300;
+        }
+        button{
+            border-radius: 25px;
+            height: 30px;
+            width: 100px;
+            margin-left: 30px;
+            color: orangered;
+            font-weight: 1000;
+
+        }
+        a{
+            text-decoration: none;
+            color: orangered;
+            font-weight: 1000;
+        }
+        #quotes{
+            color: red;
+            font-size:50px;
+            margin-right: 50px;
+            text-shadow:5px 5px 5px orangered ;
+        }
+        #bottom{
+            display: inline-flex;
+            margin-top: 30px;
+        }
+        img{
+            height: 100px;
+            width: 100px;
+        }
+        #top{
+            font-size: 40px;
+            margin-top: -150px;
+            padding-top: -20px;
+        }
+        #icons{
+            display: inline-flex;
+            margin-left: 1300px;
+            font-size: 30px;
+        }
+        #icons a{
+            color: black;
+            margin-left: 20px;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    </style>
+    <script src="./javascript3.js"></script>
+</head>
+<body style>
+    <div id="icons">
+        <h5><a href="./homepage.html">Home</a></h5>
+        <h5><a href="">About</a></h5>
+    </div>
+    <div id="first ">
+    <center>
+    <div id="top">
+    <h1><img src="./travel_logo-removebg-preview.png" alt=""> BOOK MY TRIP</h1>
+    <p>Welcome To India No.1 Booking Site</p>
+    </div>
+    <div id="bottom">
+    <div id="quotes">
+        <h5>THE WORLD IS A BOOK <br><br> AND THOSE WHO  DO NOT TRAVEL <br><br> READ ONLY THE PAGE</h5>
+    </div>
+    <div id="second">
+    <h2>Login</h2>
+    <input id="user" type="text" placeholder="Username"><br><br>
+    <input id="pass" type="password" placeholder="Password"><br><br>
+    <button onclick="login()">LOGIN</button><button>CANCEL</button><br>
+    <p><a style="color: blue;" href="./forgotpassword.html">FORGOT PASSWORD</a></p>
+    <p>ARE YOU NEW USER</p>
+    <button><a href="./sighup.html">SIGNUP</a></button>
+    </div>
+    </div>
+    </center>
+    </div>
+</body>
+</html>

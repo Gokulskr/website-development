@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-image: url(./back\ 2.webp);
+            background-size: cover;
+            color: red;
+            font-weight: 1000;
+            font-size: 20px;
+        }
+        input,textarea{
+            border-radius: 10px;
+            background-color: skyblue;
+            padding-left: 10px;
+        }
+        input{
+            height: 25px;
+            width: 250px;
+            padding-left: 20px;
+        }
+        p{
+            color: white;
+        }
+        #right{
+            width: 40%;
+            border-radius: 10px;
+            margin-left: 200px;
+            font-size: 20px;
+            border: 3px gray solid;
+            padding-left: 10px;
+            background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
+        }
+        img{
+            height: 100px;
+            width: 500px;
+            margin-top: 20px;
+        }
+        table{
+            opacity: 100%;
+            margin-top:10px;
+
+        }
+        table td{
+            padding: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        button{
+            margin-left: 50px;
+            border-radius: 20px;
+            height: 30px;
+            width: 100px;
+            background-color: lime;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        #bottom{
+            margin-top: -60px;
+        }
+        #left{
+            text-align: center;
+            font-size: 20px;
+            color: white;
+            text-shadow: 5px 5px 5px red;
+            margin-top: 100px;
+            margin-left: 50px;
+            padding-top: 20px;
+        }
+        #containerbox{
+            display: inline-flex;
+        }
+    </style>
+    <script src="/SONGAPP/javascript2.js"></script>
+</head>
+<body>
+    <center>
+    <div id="containerbox">
+    <div id="right">
+    <table>
+    <tr><td><label>NAME : </label></td><td><input type="text" placeholder="Name"></td></tr>
+    <tr><td><label>USERNAME : </label></td><td><input type="text" placeholder="Enter the username"></td></tr>
+    <tr><td><label>PASSWORD : </label></td><td><input id="Password" type="text" placeholder="Enter the password"></td></tr>
+    <tr><td colspan="2"><p id="p1"></p></td></tr>
+    <tr><td><label>RECONFIRM PASSWORD : </label></td><td><input id="Confirm password" type="text" placeholder="Reenter the password"></td></tr>
+    <tr><td colspan="2"><p id="p2"></p></td></tr>
+    <tr><td><label> PHONE NUMBER : </label></td><td><input id="number" type="number" placeholder="Enter the number"></td></tr>
+    <tr><td colspan="2"><p id="p3"></p></td></tr>
+    <tr><td><label>D.O.B : </label></td><td><input type="datetime-local" ></td></tr>
+    <tr><td><label>EMAIL ID : </label></td><td><input id="gmail" type="email" placeholder="Enter the email id"></td></tr>
+    <tr><td colspan="2"><p id="p4"></p></td></tr>
+    <tr><td><label>GENDER</label></td><td><input type="radio" name="male"><label>Male</label><input type="radio" name="male"><label>Female</label><input type="radio" name="male"><label>Others</label></td></tr><br><br>
+    <tr><td><label>PERMANENT ADDRESS : </label></td><td><textarea type="Enter the address" rows="6" cols="30"></textarea></td></tr>
+    <tr><td><button onclick="go()">SIGNUP</button></td><td><button>RESET</button></td></tr>
+    </table>
+    </div>
+    <div id="left">
+            <h1>NO ONE REALIZES <br> HOW BEAUTIFULL <br> IT IS TO TRAVEL UNTILL <br>HE COMES HOME <br> AND RESTS HIS <br>HEAD ON HIS OLD,<br> FAMILIAR PILLOW</h1>
+    </div>
+</div>
+</center>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flight</title>
+    <style>
+        body{
+            background-image: url(./flight.webp);
+            background-size: cover;
+            color: red;
+        }
+        #left{
+            border-radius: 25px;
+            margin-top: 50px;
+            margin-left: 50px;
+            font-style: italic;
+            font-weight: 1000;
+            font-size: 50px;
+        }
+        input{
+            height: 30px;
+            width: 300px;
+            border-radius: 25px;
+            padding-left: 20px;
+            background-color: skyblue;
+        }
+        select{
+            height: 32px;
+            width: 320px;
+            border-radius: 25px;
+            padding-left: 20px;
+            background-color: skyblue;
+        }
+        button{
+            height: 50px;
+            width: 150px;
+            border-radius: 15px;
+            background-color: lime;
+            font-weight: 1000;
+        }
+        a{
+            text-decoration: none;
+            color: red;
+            font-size: 20px;
+        }
+        #containerbox{
+            display: inline-flex;
+        }
+        #right{
+            margin-left: 150px;
+            margin-top: 50px;
+            font-size: 30px;
+            background: linear-gradient(to top,rgba(0,0,0,0.7)50%,rgba(0,0,0,0.5)50%);
+            border: 1px gray solid;
+            border-radius: 25px;
+            padding-left: 20px;
+            padding-bottom: 20px;
+        }
+    </style>
+    <script src="./flightform.js"></script>
+</head>
+<body>
+    <div id="containerbox">
+        <div id="right">
+        <h1>FLIGHT</h1>       
+        <table>
+            <tr>
+                <td><strong>FROM</strong></td>
+                <td><select name="" id="from"><option value="CHENNAI">CHENNAI</option>
+                    <option value="THANJAVUR">THANJAVUR</option>
+                    <option value="TRICHY">TRICHY</option></select></td>
+            </tr>
+            <tr>
+                <td><strong>TO</strong></td>
+                <td><select name="" id="to"><option value="CHENNAI">CHENNAI</option>
+                    <option value="THANJAVUR">THANJAVUR</option>
+                    <option value="TRICHY">TRICHY</option></select></td>
+            </tr>
+            <tr>
+                <td><strong>DATE</strong></td>
+                <td><input type="datetime-local" ></td>
+            </tr>
+            <tr>
+                <td><strong>TIME</strong></td>
+                <td><input type="time"></td>
+            </tr>
+            <tr>
+                <td><strong>NO OF PERSONS</strong></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><strong>CLASS</strong></td>
+                <td>
+                    <input type="radio" name="male">,<label>I</label><br>
+                    <input type="radio" name="male">,<label>II</label><br>
+                    <input type="radio" name="male">,<label>III</label><br>
+                </td>
+            </tr>
+        <tr><td><center><button onclick="via()">NEXT</button></center></td></tr>
+    </table>
+        </div>
+        <div id="left">
+            <h5>UNTILL YOU SPREAD <br>YOUR WINGS <br>YOU'LL HAVE NO IDEA <br> HOW FAR YOU CAN FLY</h5>
+        </div>
+    </div>
+</body>
+</html>

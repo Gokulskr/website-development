@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flight Table</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background-image: url(https://www.freightwaves.com/wp-content/uploads/2020/04/Lufthansa_announces_1.jpg);
+        background-size: cover;
+        color: white;
+      }
+      table {
+        margin-top: 100px;
+        width: 500px;
+        border: 1px solid white;
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 25px;
+      }
+      table th {
+        color: red;
+        padding: 20px;
+      }
+      table td {
+        color: white;
+        padding: 20px;
+      }
+      .btn-book {
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-weight: bold;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+      }
+      .btn-book:hover {
+        background-color: #dc3545;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>FLIGHT NAME</th>
+            <th>FLIGHT NO</th>
+            <th>TIME</th>
+            <th>FROM</th>
+            <th>TO</th>
+            <th>TICKET COST</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="text-white">AIR INDIA</span></td>
+            <td><span class="text-white">0001</span></td>
+            <td><span class="text-white">9:00 AM</span></td>
+            <td><span class="text-white">CHENNAI</span></td>
+            <td><span class="text-white">THANJAVUR</span></td>
+            <td><span class="text-white">Rs.2000</span></td>
+            <td><a href="./payment.html" class="btn btn-book">BOOK</a></td>
+          </tr>
+          <tr>
+            <td><span class="text-white">SPICE JET</span></td>
+            <td><span class="text-white">0002</span></td>
+            <td><span class="text-white">1:50 PM</span></td>
+            <td><span class="text-white">CHENNAI</span></td>
+            <td><span class="text-white">THANJAVUR</span></td>
+            <td><span class="text-white">Rs.4000</span></td>
+            <td><a href="./payment.html" class="btn btn-book">BOOK</a></td>
+          </tr>
+          <tr>
+            <td><span class="text-white">GO FIRST</span></td>
+            <td><span class="text-white">0003</span></td>
+            <td><span class="text-white">11:30 PM</span></td>
+            <td><span class="text-white">CHENNAI</span></td>
+            <td><span class="text-white">THANJAVUR</span></td>
+            <td><span class="text-white">Rs.2500</span></td>
+            <td><a href="./payment.html" class="btn btn-book">BOOK</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

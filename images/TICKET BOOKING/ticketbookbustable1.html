@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bustable</title>
+    <style>
+        body{
+            background-image: url(./bus.jpg);
+            background-size: cover;
+        }
+        table{
+            height: 250px;
+            width: 500px;
+            text-align: justify;
+            font-size: 30px;
+            padding-left: 50px;
+            margin-top: 100px;
+            border: 2px white solid;
+            background: linear-gradient(to top,rgba(0,0,0,0.7)50%,rgba(0,0,0,0.5)50%);
+            border: 1px gray solid;
+            border-radius: 25px;
+        }
+        table td{
+            color: white;
+        }
+        table td,th{
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        button{
+            height: 50px;
+            width: 150px;
+            background-color: red;
+            font-size: 20px;
+            border-radius: 10px;
+            font-weight:1000 ;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <table border="5px">
+        <thead>
+            <tr>
+                <th>BUS NAME</th>
+                <th>BUS NO</th>
+                <th>TIME</th>
+                <th>FROM </th>
+                <th>TO</th>
+                <th>TICKEY COST</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>PARVIN TRAVELS</td>
+                <td>1001</td>
+                <td>10:00 AM</td>
+                <td>CHENNAI</td>
+                <td>THANJAVUR</td>
+                <td>Rs.700</td>
+                <td><button><a href="./payment.html">BOOK</a></button></td>
+            </tr>
+            <tr>
+                <td>PLA TRAVELS</td>
+                <td>1002</td>
+                <td>3:50 PM</td>
+                <td>CHENNAI</td>
+                <td>THANJAVUR</td>
+                <td>Rs.1000</td>
+                <td><button><a href="./payment.html">BOOK</a></button></td>
+            </tr>
+            <tr>
+                <td>KJB TRAVELS</td>
+                <td>1003</td>
+                <td>9:30 PM</td>
+                <td>CHENNAI</td>
+                <td>THANJAVUR</td>
+                <td>Rs.1500</td>
+                <td><button><a href="./payment.html">BOOK</a></button></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+</body>
+</html>

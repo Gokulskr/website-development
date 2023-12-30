@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background-color: #000;
+        overflow: hidden;
+      }
+      .signup-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+      }
+      .signup-form {
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        padding: 30px;
+        animation: slideshow 20s infinite;
+      }
+      @keyframes slideshow {
+        0% {
+          background-image: url(./images/back-1.webp);
+        }
+        33% {
+          background-image: url(./images/back-2.webp);
+        }
+        66% {
+          background-image: url(./images/back-3.webp);
+        }
+        100% {
+          background-image: url(./images/back-1.webp);
+        }
+      }
+      .signup-form h1 {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .signup-form label {
+        font-weight: bold;
+      }
+      .signup-form input[type="text"],
+      .signup-form input[type="password"],
+      .signup-form input[type="email"],
+      .signup-form input[type="tel"],
+      .signup-form textarea {
+        border-radius: 10px;
+      }
+      .signup-form button[type="submit"],
+      .signup-form button[type="reset"] {
+        border-radius: 20px;
+        width: 100%;
+        margin-top: 20px;
+      }
+      .moving-words {
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        color: white;
+        text-shadow: 5px 5px 5px red;
+        margin-top: 100px;
+        padding-top: 20px;
+      }
+      .moving-words h1 {
+        font-size: 30px;
+        line-height: 1.2;
+        animation: moveWords 10s infinite alternate;
+      }
+      @keyframes moveWords {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(200px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="signup-container">
+      <div class="signup-form">
+        <h1>Signup</h1>
+        <!-- Rest of the form -->
+      </div>
+      <div class="moving-words">
+        <h1>
+          NO ONE REALIZES <br />
+          HOW BEAUTIFUL <br />
+          IT IS TO TRAVEL UNTIL <br />
+          THEY COME HOME <br />
+          AND REST THEIR <br />
+          HEAD ON THEIR OLD, <br />
+          FAMILIAR PILLOW
+        </h1>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

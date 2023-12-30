@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticket</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <style>
+      body {
+        background-image: url(https://www.pixelstalk.net/wp-content/uploads/images6/Travel-Wallpaper-HD-Free-download.jpg);
+        background-size: cover;
+        font-size: 40px;
+        font-weight: 1000;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      .container {
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .ticket-info {
+        margin-bottom: 20px;
+      }
+      .ticket-info p {
+        margin-bottom: 5px;
+      }
+      .label {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .message {
+        font-size: 24px;
+        animation: moveText 2s infinite;
+      }
+      .message em {
+        font-style: italic;
+      }
+
+      @keyframes moveText {
+        0% {
+          transform: translateX(-100px);
+        }
+        50% {
+          transform: translateX(100px);
+        }
+        100% {
+          transform: translateX(-100px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="ticket-info">
+        <p>
+          <span class="label"><i class="fas fa-map-marker-alt"></i></span>
+          CHENNAI
+        </p>
+        <p>
+          <span class="label"><i class="fas fa-map-marker-alt"></i></span>
+          TRICHY
+        </p>
+        <p><strong>NO OF PERSONS:</strong> 5</p>
+        <p><strong>TICKET COST:</strong> 50000</p>
+      </div>
+      <div class="message">
+        <p><em>HAVE A HAPPY AND SAFE JOURNEY</em></p>
+      </div>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js"></script>
+  </body>
+</html>

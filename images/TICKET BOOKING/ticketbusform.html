@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bus</title>
+    <style>
+        body{
+            background-image: url(./bus.jpg);
+            background-size: cover;
+        }
+        #left{
+            border-radius: 25px;
+            width: 40%;
+            color: black;
+            font-size: 20px;
+            font-weight: 1000;
+            margin-left: 30px;
+            margin-top: 50px;
+            background: linear-gradient(to top,rgba(0,0,0,0.7)50%,rgba(0,0,0,0.5)50%);
+            border: 1px gray solid;
+            padding-left: 20px;
+            padding-bottom: 20px;
+        }
+        input{
+            height: 30px;
+            width: 300px;
+            border-radius: 25px;
+            padding-left: 20px;
+        }
+        select{
+            height: 37px;
+            width: 320px;
+            border-radius: 25px;
+            padding-left: 20px;
+        }
+        button{
+            height: 50px;
+            width: 150px;
+            border-radius: 15px;
+            background-color: lime;
+            font-size: 20px;
+            font-weight: 1000;
+        }
+        a{
+            text-decoration: none;
+            color: red;
+        }
+        #containerbox{
+            display: inline-flex;
+        }
+        #right{
+            font-size: 40px;
+            margin-left: 200px;
+            font-style: italic;
+        }
+        table td{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    </style>
+    <script src="./busform.js"></script>
+</head>
+<body>
+    <div id="containerbox">
+        <div id="left">
+        <h1>BUS LOGIN</h1>
+        <table>
+            <tr>
+                <td><strong>FROM : </strong></td>
+                <td><select name="" id="from"><option value="CHENNAI">CHENNAI</option>
+                <option value="THANJAVUR">THANJAVUR</option>
+                <option value="TRICHY">TRICHY</option></select></td>
+            </tr>
+            <tr>
+                <td><strong>TO : </strong></td>
+                <td><select name="" id="to"><option value="CHENNAI">CHENNAI</option>
+                    <option value="THANJAVUR">THANJAVUR</option>
+                    <option value="TRICHY">TRICHY</option></select></td>
+            </tr>
+            <tr>
+                <td><strong>DATE : </strong></td>
+                <td><input type="datetime-local"></td>
+            </tr>
+            <tr>
+                <td><strong>TIME : </strong></td>
+                <td><input type="time" placeholder="Time"></td>
+            </tr>
+            <tr>
+                <td><strong>NO OF PERSONS : </strong></td>
+                <td><input type="text" placeholder="No of Persons"></td>
+            </tr>
+            <tr>
+                <td><strong>CLASS : </strong></td>
+                <td>
+                    <input type="radio" name="male">,<label style="color: white;">I</label>
+                    <input type="radio" name="male">,<label style="color: white;">II</label>
+                    <input type="radio" name="male">,<label style="color: white;">III</label>
+                </td>
+            </tr>
+        </table>
+        <center>
+            <button onclick="via()">NEXT</button>
+        </center>
+        </div>
+        
+        <div id="right">
+            <h1>BUS JOURNEY</h1>
+            <h6>A window seat in a bus, <br>With headphones plugged in, <br>With your favorite playlist, <br>With the sunset nearby, <br>
+            And chilling air comming in, <br>Realaxing down in memories, <br>Is the most amazing journey, <br>In this noizy world.</h6>
+        </div>
+    </div>
+</body>
+</html>

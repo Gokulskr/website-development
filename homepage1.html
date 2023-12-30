@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book my trip</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        position: relative;
+        overflow: hidden;
+        background-image: url("https://wallpapercave.com/wp/wp2704824.jpg");
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .snowfall {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 1;
+      }
+
+      .snowflake {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        border-radius: 50%;
+        pointer-events: none;
+        animation: snowfall linear infinite;
+      }
+
+      @keyframes snowfall {
+        0% {
+          transform: translateY(0) translateX(0) rotate(0deg);
+        }
+        100% {
+          transform: translateY(100vh) translateX(200px) rotate(360deg);
+        }
+      }
+
+      .book-my-trip {
+        color: #ff6b6b;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="snowfall">
+      <div class="snowflake"></div>
+      <div class="snowflake"></div>
+      <div class="snowflake"></div>
+      <!-- Add more snowflakes here if desired -->
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <h1 class="text-center"><span class="book-my-trip">BOOK MY TRIP</span></h1>
+          <p class="text-center">Welcome To India's No.1 Booking Site</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <div class="card bg-dark text-white">
+            <div class="card-body">
+              <h2 class="card-title text-center">Login</h2>
+              <div id="second">
+                
+                <input id="user" type="text" placeholder="Username" /><br /><br />
+                <input
+                  id="pass"
+                  type="password"
+                  placeholder="Password"
+                /><br /><br />
+                <button onclick="login()">LOGIN</button><button>CANCEL</button
+                ><br />
+              <p class="text-center">
+                <a href="./forgotpassword.html">FORGOT PASSWORD</a>
+              </p>
+              <p class="text-center">ARE YOU A NEW USER?</p>
+              <div class="text-center">
+                <a href="./sighup.html">SIGNUP</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script/javascript3.js"></script>
+    <script src="script/snowfall.js"></script>
+  </body>
+</html>
